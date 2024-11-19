@@ -1,0 +1,29 @@
+---
+sidebar_position: 3
+locale: zh-Hans
+---
+
+# 本地部署
+
+:::tip
+常规方式访问为 CDN 访问 tesseract.js，如果需要本地访问，则需要如下操作：
+:::
+
+## 1、将静态文件复制至本地服务器上
+
+在`node_modules/idcard.js/tesseract`移动至本地静态文件夹内：如 `/public/`、`/static/` 等
+
+## 2、在代码中添加本地路径
+
+```js
+recognize(file, {
+  workerPath: "/idcard.js/tesseract/worker.min.js",
+  corePath: "/idcard.js/tesseract/tesseract-core.wasm.js",
+});
+```
+
+## 示例
+
+import Local from "../example/local";
+
+<Local />

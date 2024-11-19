@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.19.2.
+ * Original file: /npm/tesseract.js-core@5.0.0/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+module.exports="object"==typeof WebAssembly?require("./tesseract-core"):require("./tesseract-core.asm");
+//# sourceMappingURL=/sm/b7bf35a9e8815ea103db5baf6c2f98e26391853629336bdcb3f197b120cd655d.map
