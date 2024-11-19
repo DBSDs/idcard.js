@@ -2,7 +2,6 @@ import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import { babel } from "@rollup/plugin-babel";
 import filesize from "rollup-plugin-filesize";
-import { visualizer } from "rollup-plugin-visualizer";
 import typescript from "rollup-plugin-typescript2";
 import copy from "rollup-plugin-copy";
 import cleanup from "rollup-plugin-cleanup";
@@ -43,7 +42,6 @@ const prodPlugins = plugins.concat([
   }),
   terser(),
   filesize(),
-  visualizer(),
   typescript({
     // rollupCommonJSResolveHack: false,
     outDir: "./types",
